@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %} 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="header">
+            <a href="{% url 'index' %}">&#8592; Back</a>  
+        </div>
+        
+        
+        <div class="card-body">
+
+                <p>Description: {{tasks.description}}</p>
+                <a href="{% url 'update' tasks.id %}" class="button">Make Changes</a>
+        </div>
+        
+
+        
+
+
+
+{% endblock %}

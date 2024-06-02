@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+   
+   
+   
+   
+
+    <div class="header">
+
+        <a href="{% url 'index' %}" style=" text-decoration: none;">&#8592; Back</a>
+    </div>
+
+
+    <div style="text-align: center;">
+
+        <h3>New task</h3>
+    </div>
+    <div class="card-body">
+
+        <form method="POST"> {% csrf_token %}
+            {{form.as_p}}
+                
+            <input type="submit" value="Submit" class="button">
+        </form>
+
+    </div>
+
+
+
+
+    
+
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+        <div class="header">
+
+                <a href="{% url 'index' %}">&#8592; Back</a>        
+
+        </div>
+        <div style="text-align: center;">
+
+                <h1>Make Changes</h1>
+        </div>
+        
+        <div class="card-body">
+                <form method="POST"> {% csrf_token %}
+
+
+                        {{form.as_p}}
+                        <input type="submit" value="Update" class="button">
+    
+                </form>
+        </div>
+               
+
+
+
+{% endblock %}

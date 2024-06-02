@@ -1,0 +1,27 @@
+<table class="table table-bordered table-hover">
+    <tr >
+        <th>Items</th>
+        <th>Description</th>
+        <th>Update</th>
+        
+    </tr>
+
+    
+        {% for task in tasks %}
+        <tr>
+            <td > {{task.title}}</td>
+            <!-- <td><a href="{% url 'detail' task.id %}">View Details</a></td> -->
+            <td><a href="{% url 'update' task.id %}">Update Details</a></td>
+            <td><a href="{% url 'delete' task.id %}">Delete Details</a></td>
+        </tr>
+
+
+        {% empty %}
+                <h3>No results</h3>
+
+        {% endfor %}
+    
+
+
+
+</table>

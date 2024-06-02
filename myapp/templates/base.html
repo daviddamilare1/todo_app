@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+
+    <style>
+            body{
+                background-color:#fff;
+                font-family: 'Nunito', serif;
+                padding-top: 50px;
+            }
+
+            .container{
+                max-width: 550px;
+                margin: auto;
+                background-color: #E1A95F;
+                -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+                box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, o.21);
+                border-radius: 5px;
+            }
+
+            .header{
+                display: flex;
+                justify-content: space-between;
+                color: #FFFFFF;
+                padding: 10px;
+                border-radius: 5px 5px 0 0;
+                background: linear-gradient(90deg, #CD7F32 0%, #CD7F32 43%, #993300 100%);
+                text-decoration: none;
+            }
+
+            .header a{
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            
+
+
+            .task-wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: #B87333;
+                border-top: 1px solid rgb(244, 164, 96);
+            }
+
+            .task-title{
+                display: flex;
+            }
+            
+            .task-title a{
+                text-decoration: none;
+                color: #FFFFFF;
+                margin-left: 10px;
+            }
+
+            .task-incomplete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(218, 218,218);
+                border-radius: 50%;
+            }
+
+            .task-complete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: rgb(105, 192, 105);
+                border-radius: 50%;
+
+            }
+
+            .delete-link{
+                text-decoration: none;
+                font-weight: 900;
+                color: #E60026;
+                font-size: 22px;
+                line-height: 0;
+            }
+
+
+
+            h1, 
+            h3,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6   
+                {
+                        font-family: 'Raleway' sans-serif;
+                        color: #FFFFFF;
+                }
+            
+            a,
+            p{
+                color: #FFFFFF;
+               
+            }
+                
+            #search-add-rapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
+            #add-task{
+                color: #F0F8FF;
+                text-decoration: none;
+                font-size: 40px;
+                text-shadow: 1px 1px #000;
+            }
+
+            input[type=text],
+            input[type=password],
+            textarea {
+                border: 1px solid #F0F8FF;
+                border-radius: 5px;
+                padding: 10px;
+                width: 90%;
+            }
+
+            label {
+                padding-top: 10px !important;
+                display: block;
+                color: #FFFFFF;
+
+            }
+
+            .button {
+                border: 1px solid #F0F8FF;
+                background-color: #CD7F32;
+                color: #F0F8FF;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .card-body {
+                padding: 20px;
+            }
+
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+        <div class="container">
+
+            {% block content %}
+
+            {% endblock content %}
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
